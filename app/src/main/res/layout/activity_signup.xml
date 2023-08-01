@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:padding="25dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="添加一个新的账号"
+            android:textColor="@color/grey_7D7D7D"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/signup_img_file"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/login_image_bg"
+                android:onClick="onClick"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/signup_tv_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="添加头像"
+                android:textColor="#757575"
+                android:textSize="10sp" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/signup_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_et_bg"
+            android:hint="昵称"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="16sp"
+            android:paddingEnd="16sp"
+            android:textColor="@color/black_212121"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/signup_et_username"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/login_et_bg"
+            android:hint="@string/prompt_username"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="16sp"
+            android:paddingEnd="16sp"
+            android:textColor="@color/black_212121"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/signup_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16sp"
+            android:background="@drawable/login_et_bg"
+            android:hint="@string/prompt_password"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="16sp"
+            android:paddingEnd="16sp"
+            android:textColor="@color/black_212121"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/signup_et_comfirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="16sp"
+            android:background="@drawable/login_et_bg"
+            android:hint="确认密码"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="16sp"
+            android:paddingEnd="16sp"
+            android:textColor="@color/black_212121"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/signup_btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_btn_bg"
+            android:text="注  册"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:cornerRadius="8dp" />
+
+        <TextView
+            android:id="@+id/signup_tv_toLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="登  录"
+            android:textColor="@color/purple_1C2E46"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
