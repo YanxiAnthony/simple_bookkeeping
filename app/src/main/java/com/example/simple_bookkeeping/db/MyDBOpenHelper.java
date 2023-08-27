@@ -35,7 +35,6 @@ public class MyDBOpenHelper extends SQLiteOpenHelper {
     public void insert(String account,String loginKey,String name){
         String INSERT_USER_SQL="insert into "+TABLE_NAME+" (account,login_key,name) values(?,?,?)";
         db.execSQL(INSERT_USER_SQL,new Object[]{account,loginKey,name});
-
     }
 
     //根据账号查找密码

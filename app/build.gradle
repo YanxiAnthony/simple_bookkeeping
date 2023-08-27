@@ -27,6 +27,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'com.example.simple_bookkeeping'
 }
 
 dependencies {
