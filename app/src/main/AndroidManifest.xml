@@ -21,9 +21,9 @@
     <application
         android:name=".UniteApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_icon1"
+        android:icon="@mipmap/jz"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_icon1"
+        android:roundIcon="@mipmap/jz"
         android:supportsRtl="true"
         android:theme="@style/Theme.Simple_bookkeeping">
         <activity
